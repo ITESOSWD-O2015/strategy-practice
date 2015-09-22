@@ -14,7 +14,7 @@ public class BasketBall extends Ball{
         setiDeflateBehavior(new Deflatable());
         setiFloatsBehavior(new DoFloat());
 
-        setType("Basket ball");
+        setType("Basketball");
     }
 
 }

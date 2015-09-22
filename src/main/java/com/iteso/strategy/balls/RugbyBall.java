@@ -10,7 +10,7 @@ public class RugbyBall extends Ball{
 
     public RugbyBall(){
 
-        setBounceBehavior(new NormalBounce());
+        setBounceBehavior(new IrregularBounce());
         setiDeflateBehavior(new Deflatable());
         setiFloatsBehavior(new DoFloat());
 

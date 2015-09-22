@@ -1,7 +1,6 @@
 package com.iteso.strategy2.lifesavers;
 
 import com.iteso.strategy.behaviors.impl.Deflatable;
-import com.iteso.strategy.behaviors.impl.NotDeflatable;
 import com.iteso.strategy2.Lifesaver;
 
 /**
@@ -12,6 +11,6 @@ public class LifeVests extends Lifesaver {
     public LifeVests() {
 
         setiDeflateBehavior(new Deflatable());
-        type = "Life Vests";
+        setType("Life Vests");
     }
 }

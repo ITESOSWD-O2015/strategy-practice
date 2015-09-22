@@ -11,6 +11,6 @@ public class LifeSaversCandies extends Lifesaver{
     public LifeSaversCandies() {
 
         setiDeflateBehavior(new NotDeflatable());
-        type = "Life Savers Candies";
+        setType("Life Savers Candies");
     }
 }

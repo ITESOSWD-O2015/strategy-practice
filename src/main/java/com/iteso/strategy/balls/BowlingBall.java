@@ -17,7 +17,7 @@ public class BowlingBall extends Ball {
         setiDeflateBehavior(new NotDeflatable());
         setiFloatsBehavior(new DoNotFloat());
 
-        setType("Soccer ball");
+        setType("Bowling Ball");
     }
 
 

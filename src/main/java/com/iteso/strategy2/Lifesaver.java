@@ -11,8 +11,8 @@ import com.iteso.strategy.behaviors.iDeflateBehavior;
  * To change this template use File | Settings | File Templates.
  */
 public abstract class Lifesaver extends Ball{
-    protected String type;
-    private com.iteso.strategy.behaviors.iDeflateBehavior iDeflateBehavior;
+    private String type;
+    private iDeflateBehavior iDeflateBehavior;
 
     public Lifesaver(){
 
@@ -21,7 +21,7 @@ public abstract class Lifesaver extends Ball{
     public String performDeflate() {return getiDeflateBehavior().deflate();}
     public String floating() {return "I'm floating";}
     public String display() {
-        return "I'm a " + type;
+        return "I'm a " + getType();
     }
 
     @Override
@@ -32,5 +32,15 @@ public abstract class Lifesaver extends Ball{
     @Override
     public void setiDeflateBehavior(com.iteso.strategy.behaviors.iDeflateBehavior iDeflateBehavior) {
         this.iDeflateBehavior = iDeflateBehavior;
+    }
+
+    @Override
+    public String getType() {
+        return type;
+    }
+
+    @Override
+    public void setType(String type) {
+        this.type = type;
     }
 }

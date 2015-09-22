@@ -35,6 +35,9 @@ public abstract class Ball {
         return getiDeflateBehavior().inflate();
     }
 
+    public String performFloat(){return getiFloatsBehavior().floats();}
+
+
     public iBounceBehavior getBounceBehavior() {
         return bounceBehavior;
     }
@@ -43,7 +46,7 @@ public abstract class Ball {
         this.bounceBehavior = bounceBehavior;
     }
 
-    public com.iteso.strategy.behaviors.iDeflateBehavior getiDeflateBehavior() {
+    public iDeflateBehavior getiDeflateBehavior() {
         return iDeflateBehavior;
     }
 
@@ -59,11 +62,11 @@ public abstract class Ball {
         this.type = type;
     }
 
-    public com.iteso.strategy.behaviors.iFloatsBehavior getiFloatsBehavior() {
+    public iFloatsBehavior getiFloatsBehavior() {
         return iFloatsBehavior;
     }
 
-    public void setiFloatsBehavior(com.iteso.strategy.behaviors.iFloatsBehavior iFloatsBehavior) {
+    public void setiFloatsBehavior(iFloatsBehavior iFloatsBehavior) {
         this.iFloatsBehavior = iFloatsBehavior;
     }
 }

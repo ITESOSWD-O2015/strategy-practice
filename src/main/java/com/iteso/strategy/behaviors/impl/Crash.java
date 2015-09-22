@@ -10,6 +10,7 @@ import com.iteso.strategy.behaviors.iBounceBehavior;
  * To change this template use File | Settings | File Templates.
  */
 public class Crash implements iBounceBehavior {
+
     public String bounce() {
         return "I crashed!! I can't bounce";
     }

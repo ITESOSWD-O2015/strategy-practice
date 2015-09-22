@@ -11,6 +11,6 @@ public class FoanFloats extends Lifesaver{
     public FoanFloats() {
 
         setiDeflateBehavior(new NotDeflatable());
-        type = "Foan Floats";
+        setType("Foan Floats");
     }
 }

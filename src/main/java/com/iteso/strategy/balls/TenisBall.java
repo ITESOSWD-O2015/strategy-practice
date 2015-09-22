@@ -1,9 +1,6 @@
 package com.iteso.strategy.balls;
 
-import com.iteso.strategy.behaviors.impl.Deflatable;
-import com.iteso.strategy.behaviors.impl.DoFloat;
-import com.iteso.strategy.behaviors.impl.DoNotFloat;
-import com.iteso.strategy.behaviors.impl.NormalBounce;
+import com.iteso.strategy.behaviors.impl.*;
 import com.iteso.strategy.Ball;
 
 /**
@@ -14,8 +11,8 @@ public class TenisBall extends Ball {
     public TenisBall(){
 
         setBounceBehavior(new NormalBounce());
-        setiDeflateBehavior(new Deflatable());
-        setiFloatsBehavior(new DoFloat());
+        setiDeflateBehavior(new NotDeflatable());
+        setiFloatsBehavior(new PartTimeFloat());
 
         setType("Tenis ball");
     }
