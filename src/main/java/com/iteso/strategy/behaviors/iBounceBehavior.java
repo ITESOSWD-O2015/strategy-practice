@@ -10,3 +10,4 @@ package com.iteso.strategy.behaviors;
 public interface iBounceBehavior {
     String bounce();
 }
+

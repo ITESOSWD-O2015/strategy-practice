@@ -28,12 +28,14 @@ class JamaiconSportsBallModule {
         System.out.println(american.performDeflate());
         System.out.println(american.performInflate());
 
+
         System.out.println();
 
         System.out.println(base.roll());
         System.out.println(base.performBounce());
         System.out.println(base.performDeflate());
         System.out.println(base.performInflate());
+
 
     }
 }

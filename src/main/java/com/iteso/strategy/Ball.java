@@ -13,6 +13,7 @@ import com.iteso.strategy.behaviors.iDeflateBehavior;
 public abstract class Ball {
     protected iBounceBehavior bounceBehavior;
     protected iDeflateBehavior iDeflateBehavior;
+
     protected String type;
 
     protected Ball() {
@@ -33,4 +34,6 @@ public abstract class Ball {
     public String performInflate() {
         return iDeflateBehavior.inflate();
     }
+
+
 }
