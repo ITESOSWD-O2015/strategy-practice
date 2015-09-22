@@ -19,5 +19,11 @@ public class AmericanFootballBallTest {
         assertEquals("I'm deflating!", americanFootballBall.performDeflate());
         assertEquals("I'm inflating!", americanFootballBall.performInflate());
         assertEquals("American Football ball is rolling!", americanFootballBall.roll());
+        assertEquals("I'm dead x.x!", americanFootball.explode());
+        assertsEquals("I'm floating", americanFootball.floating());
+        assertsEquals("I'm not moving!", americanFootball.notmoving());
+        assertsEquals("I crashed!! I can't bounce", americanFootball.crash());
+        assertsEquals("I'm dead x.x!", americanFootball.explode());
+
     }
 }

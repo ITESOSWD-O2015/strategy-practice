@@ -18,6 +18,11 @@ public class SoccerBallTest {
         assertEquals("I'm bouncing normally!", soccerBall.performBounce());
         assertEquals("I'm deflating!", soccerBall.performDeflate());
         assertEquals("I'm inflating!", soccerBall.performInflate());
-        assertEquals("Soccer ball is rolling!", soccerBall.roll());
+        assertEquals("Soccer ball is rolling!", SoccerBall.roll());
+        assertEquals("I'm dead x.x!", SoccerBall.explode());
+        assertsEquals("I'm floating", SoccerBall.floating());
+        assertsEquals("I'm not moving!", SoccerBall.notmoving());
+        assertsEquals("I crashed!! I can't bounce", SoccerBall.crash());
+        assertsEquals("I'm dead x.x!", SoccerBall.explode());
     }
 }

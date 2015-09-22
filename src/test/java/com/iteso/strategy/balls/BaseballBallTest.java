@@ -19,5 +19,10 @@ public class BaseballBallTest {
         assertEquals("I can't deflate!", baseballBall.performDeflate());
         assertEquals("I can't inflate!", baseballBall.performInflate());
         assertEquals("Baseball ball is rolling!", baseballBall.roll());
+        assertEquals("I'm dead x.x!", americanFootball.explode());
+        assertsEquals("I'm floating", americanFootball.floating());
+        assertsEquals("I'm not moving!", americanFootball.notmoving());
+        assertsEquals("I crashed!! I can't bounce", americanFootball.crash());
+        assertsEquals("I'm dead x.x!", americanFootball.explode());
     }
 }
