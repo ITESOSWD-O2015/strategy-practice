@@ -1,5 +1,7 @@
 package com.iteso.strategy2;
 
+import com.iteso.strategy.behaviors.iDeflateBehavior;
+
 /**
  * Created with IntelliJ IDEA.
  * User: rvillalobos
@@ -8,17 +10,34 @@ package com.iteso.strategy2;
  * To change this template use File | Settings | File Templates.
  */
 public abstract class Lifesaver {
-    protected String type;
+    private iDeflateBehavior deflateBehavior;
+    private String type;
     public String inflating() {
-        return "I'm inflating";
+        return getDeflateBehavior().inflate();
     }
     public String deflating() {
-        return "I'm deflating";
+        return getDeflateBehavior().deflate();
     }
     public String floating() {
         return "I'm floating";
     }
     public String display() {
-        return "I'm a " + type;
+        return "I'm a " + getType();
+    }
+
+    public iDeflateBehavior getDeflateBehavior() {
+        return deflateBehavior;
+    }
+
+    public void setDeflateBehavior(iDeflateBehavior deflateBehavior) {
+        this.deflateBehavior = deflateBehavior;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }

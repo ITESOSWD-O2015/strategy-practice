@@ -2,6 +2,7 @@ package com.iteso.strategy;
 
 import com.iteso.strategy.behaviors.iBounceBehavior;
 import com.iteso.strategy.behaviors.iDeflateBehavior;
+import com.iteso.strategy.behaviors.iFloatationBehavior;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,26 +12,63 @@ import com.iteso.strategy.behaviors.iDeflateBehavior;
  * To change this template use File | Settings | File Templates.
  */
 public abstract class Ball {
-    protected iBounceBehavior bounceBehavior;
-    protected iDeflateBehavior iDeflateBehavior;
-    protected String type;
+    private iBounceBehavior bounceBehavior;
+    private iDeflateBehavior iDeflateBehavior;
+    private iFloatationBehavior FloatationBehavior;
+    private String type;
 
     protected Ball() {
     }
 
     public String roll() {
-        return type + " is rolling!";
+        return getType() + " is rolling!";
     }
 
     public String performBounce() {
-        return bounceBehavior.bounce();
+        return getBounceBehavior().bounce();
     }
 
     public String performDeflate() {
-        return iDeflateBehavior.deflate();
+        return getiDeflateBehavior().deflate();
     }
 
     public String performInflate() {
-        return iDeflateBehavior.inflate();
+        return getiDeflateBehavior().inflate();
+    }
+
+    public String performFloatation() {
+        return FloatationBehavior.floatation();
+    }
+
+    public iBounceBehavior getBounceBehavior() {
+        return bounceBehavior;
+    }
+
+    public void setBounceBehavior(iBounceBehavior bounceBehavior) {
+        this.bounceBehavior = bounceBehavior;
+    }
+
+    public com.iteso.strategy.behaviors.iDeflateBehavior getiDeflateBehavior() {
+        return iDeflateBehavior;
+    }
+
+    public void setiDeflateBehavior(com.iteso.strategy.behaviors.iDeflateBehavior iDeflateBehavior) {
+        this.iDeflateBehavior = iDeflateBehavior;
+    }
+
+    public com.iteso.strategy.behaviors.iFloatationBehavior getFloatationBehavior() {
+        return FloatationBehavior;
+    }
+
+    public void setFloatationBehavior(com.iteso.strategy.behaviors.iFloatationBehavior iFloatationBehavior) {
+        this.FloatationBehavior = iFloatationBehavior;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }
