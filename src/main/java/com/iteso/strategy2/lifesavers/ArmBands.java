@@ -1,5 +1,6 @@
 package com.iteso.strategy2.lifesavers;
 
+import com.iteso.strategy.behaviors.impl.Superflatable;
 import com.iteso.strategy2.Lifesaver;
 
 /**
@@ -11,6 +12,7 @@ import com.iteso.strategy2.Lifesaver;
  */
 public class ArmBands extends Lifesaver {
     public ArmBands() {
+        iDeflateBehavior = new Superflatable();
         type = "Arm bands";
     }
 

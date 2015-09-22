@@ -1,22 +1,22 @@
 package com.iteso.strategy.balls;
 
 import com.iteso.strategy.Ball;
+import com.iteso.strategy.behaviors.iFloatBehaviors;
+import com.iteso.strategy.behaviors.impl.Cfloat;
 import com.iteso.strategy.behaviors.impl.Deflatable;
 import com.iteso.strategy.behaviors.impl.NormalBounce;
 import com.iteso.strategy.behaviors.impl.Superflatable;
 
 /**
- * Created with IntelliJ IDEA.
- * User: rvillalobos
- * Date: 8/7/13
- * Time: 6:39 PM
- * To change this template use File | Settings | File Templates.
+ * Created by JoseFranco on 22/09/2015.
  */
-public class SoccerBall extends Ball {
-    public SoccerBall() {
-        bounceBehavior =  new NormalBounce();
+public class BasketballBall extends Ball {
+
+    public BasketballBall() {
+        bounceBehavior = new NormalBounce();
         iDeflateBehavior = new Deflatable();
+        iFloatBehaviors = new Cfloat();
         iDeflateBehavior = new Superflatable();
-        type = "Soccer ball";
+        type = "Basketball ball";
     }
 }
