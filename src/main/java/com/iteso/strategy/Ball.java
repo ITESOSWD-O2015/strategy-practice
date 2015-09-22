@@ -1,7 +1,7 @@
 package com.iteso.strategy;
-
 import com.iteso.strategy.behaviors.iBounceBehavior;
 import com.iteso.strategy.behaviors.iDeflateBehavior;
+import com.iteso.strategy.behaviors.iFloatBehavior;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,10 +13,10 @@ import com.iteso.strategy.behaviors.iDeflateBehavior;
 public abstract class Ball {
     protected iBounceBehavior bounceBehavior;
     protected iDeflateBehavior iDeflateBehavior;
+    protected iFloatBehavior  iFloatBehavior;
     protected String type;
 
-    protected Ball() {
-    }
+    protected Ball() {}
 
     public String roll() {
         return type + " is rolling!";
@@ -33,4 +33,6 @@ public abstract class Ball {
     public String performInflate() {
         return iDeflateBehavior.inflate();
     }
+
+    public String performFloat() { return iFloatBehavior.toFloat(); }
 }

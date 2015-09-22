@@ -1,7 +1,5 @@
 import com.iteso.strategy.Ball;
-import com.iteso.strategy.balls.AmericanFootballBall;
-import com.iteso.strategy.balls.BaseballBall;
-import com.iteso.strategy.balls.SoccerBall;
+import com.iteso.strategy.balls.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,13 +13,20 @@ class JamaiconSportsBallModule {
         Ball soccer = new SoccerBall();
         Ball base = new BaseballBall();
         Ball american = new AmericanFootballBall();
+        Ball basketball = new BasketballBall();
+        Ball bowling = new BowlingBall();
+        Ball quiditch = new QuiditchBall();
+        Ball rugby = new RugbyBall();
+        Ball tenis = new TenisBall();
 
+
+        /* SOCCER */
         System.out.println(soccer.roll());
         System.out.println(soccer.performBounce());
         System.out.println(soccer.performDeflate());
         System.out.println(soccer.performInflate());
-
         System.out.println();
+
 
         System.out.println(american.roll());
         System.out.println(american.performBounce());

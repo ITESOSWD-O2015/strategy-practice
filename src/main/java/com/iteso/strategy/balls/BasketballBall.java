@@ -9,14 +9,15 @@ import com.iteso.strategy.behaviors.impl.NormalBounce;
  * Created with IntelliJ IDEA.
  * User: rvillalobos
  * Date: 8/7/13
- * Time: 6:39 PM
+ * Time: 6:46 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SoccerBall extends Ball {
-    public SoccerBall() {
+public class BasketballBall extends Ball {
+    public BasketballBall() {
         bounceBehavior =  new NormalBounce();
         iDeflateBehavior = new Deflatable();
         iFloatBehavior = new DoFloat();
-        type = "Soccer ball";
+        type = " Basketball ball";
     }
+
 }

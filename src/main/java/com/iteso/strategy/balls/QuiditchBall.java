@@ -2,9 +2,9 @@ package com.iteso.strategy.balls;
 
 import com.iteso.strategy.Ball;
 import com.iteso.strategy.behaviors.impl.DoFloat;
-import com.iteso.strategy.behaviors.impl.DoNotFloat;
 import com.iteso.strategy.behaviors.impl.IrregularBounce;
 import com.iteso.strategy.behaviors.impl.NotDeflatable;
+import com.iteso.strategy.behaviors.impl.PartTimeFloat;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,11 +13,11 @@ import com.iteso.strategy.behaviors.impl.NotDeflatable;
  * Time: 6:44 PM
  * To change this template use File | Settings | File Templates.
  */
-public class BaseballBall extends Ball {
-    public BaseballBall() {
+public class QuiditchBall extends Ball {
+    public QuiditchBall() {
         bounceBehavior =  new IrregularBounce();
         iDeflateBehavior = new NotDeflatable();
-        iFloatBehavior = new DoNotFloat();
-        type = "Baseball ball";
+        iFloatBehavior = new PartTimeFloat();
+        type = "Quiditch ball";
     }
 }

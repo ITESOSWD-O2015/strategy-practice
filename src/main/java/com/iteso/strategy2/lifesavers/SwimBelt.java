@@ -7,13 +7,13 @@ import com.iteso.strategy2.Lifesaver;
  * Created with IntelliJ IDEA.
  * User: rvillalobos
  * Date: 8/9/13
- * Time: 12:23 PM
+ * Time: 12:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SwimSeat extends Lifesaver {
-    public SwimSeat() {
+public class SwimBelt extends Lifesaver {
+    public SwimBelt() {
         iDeflateBehavior = new Deflatable();
-        type = "Swim seat";
+        type = "Swim Belts";
     }
-}
 
+}

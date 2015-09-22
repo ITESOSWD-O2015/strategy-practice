@@ -10,14 +10,15 @@ import com.iteso.strategy.behaviors.impl.NotDeflatable;
  * Created with IntelliJ IDEA.
  * User: rvillalobos
  * Date: 8/7/13
- * Time: 6:44 PM
+ * Time: 6:46 PM
  * To change this template use File | Settings | File Templates.
  */
-public class BaseballBall extends Ball {
-    public BaseballBall() {
+public class BowlingBall extends Ball {
+    public BowlingBall() {
         bounceBehavior =  new IrregularBounce();
         iDeflateBehavior = new NotDeflatable();
         iFloatBehavior = new DoNotFloat();
-        type = "Baseball ball";
+        type = "American Football ball";
     }
+
 }
