@@ -6,6 +6,6 @@ import com.iteso.strategy.behaviors.iFloatBehavior;
  */
 public class DoNotFloat implements iFloatBehavior {
 
-    public String toFloat() { return "I can't float"; }
+    public String toFloat() { return "I can't float!"; }
 
 }

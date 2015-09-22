@@ -18,7 +18,7 @@ public class BowlingBall extends Ball {
         bounceBehavior =  new IrregularBounce();
         iDeflateBehavior = new NotDeflatable();
         iFloatBehavior = new DoNotFloat();
-        type = "American Football ball";
+        type = "Bowling ball";
     }
 
 }
