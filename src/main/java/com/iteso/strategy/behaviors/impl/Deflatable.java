@@ -12,11 +12,15 @@ import com.iteso.strategy.behaviors.iDeflateBehavior;
 public class Deflatable implements iDeflateBehavior {
 
     public String deflate() {
+
         return "I'm deflating!";
     }
 
 
     public String inflate() {
+
         return "I'm inflating!";
     }
+
+
 }

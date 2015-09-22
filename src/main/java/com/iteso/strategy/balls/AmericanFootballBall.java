@@ -2,6 +2,7 @@ package com.iteso.strategy.balls;
 
 import com.iteso.strategy.Ball;
 import com.iteso.strategy.behaviors.impl.Deflatable;
+import com.iteso.strategy.behaviors.impl.DoFloat;
 import com.iteso.strategy.behaviors.impl.IrregularBounce;
 
 /**
@@ -13,9 +14,11 @@ import com.iteso.strategy.behaviors.impl.IrregularBounce;
  */
 public class AmericanFootballBall extends Ball {
     public AmericanFootballBall() {
-        bounceBehavior =  new IrregularBounce();
-        iDeflateBehavior = new Deflatable();
-        type = "American Football ball";
+        setBounceBehavior(new IrregularBounce());
+        setiDeflateBehavior(new Deflatable());
+        setiFloatsBehavior(new DoFloat());
+
+        setType("American Football ball");
     }
 
 }

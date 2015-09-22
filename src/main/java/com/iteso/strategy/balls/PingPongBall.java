@@ -4,20 +4,21 @@ import com.iteso.strategy.Ball;
 import com.iteso.strategy.behaviors.impl.Deflatable;
 import com.iteso.strategy.behaviors.impl.DoFloat;
 import com.iteso.strategy.behaviors.impl.NormalBounce;
+import com.iteso.strategy.behaviors.impl.NotDeflatable;
 
 /**
- * Created with IntelliJ IDEA.
- * User: rvillalobos
- * Date: 8/7/13
- * Time: 6:39 PM
- * To change this template use File | Settings | File Templates.
+ * Created by ShaSkills on 22/09/2015.
  */
-public class SoccerBall extends Ball {
-    public SoccerBall() {
-        setBounceBehavior(new NormalBounce());
-        setiDeflateBehavior(new Deflatable());
-        setiFloatsBehavior(new DoFloat());
-        setType("Soccer ball");
-    }
-}
+public class PingPongBall extends Ball {
 
+    public PingPongBall(){
+
+        setBounceBehavior(new NormalBounce());
+        setiDeflateBehavior(new NotDeflatable());
+        setiFloatsBehavior(new DoFloat());
+
+        setType("PingPong ball");
+    }
+
+
+}

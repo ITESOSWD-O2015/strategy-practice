@@ -5,17 +5,13 @@ import com.iteso.strategy.behaviors.impl.NotDeflatable;
 import com.iteso.strategy2.Lifesaver;
 
 /**
- * Created with IntelliJ IDEA.
- * User: rvillalobos
- * Date: 8/9/13
- * Time: 12:22 PM
- * To change this template use File | Settings | File Templates.
+ * Created by ShaSkills on 22/09/2015.
  */
-public class SwimRing extends Lifesaver {
+public class WaterTubes  extends Lifesaver{
 
-    public SwimRing() {
+    public WaterTubes() {
 
         setiDeflateBehavior(new Deflatable());
-        type = "Swim ring";
+        type = "Water Tubes";
     }
 }
