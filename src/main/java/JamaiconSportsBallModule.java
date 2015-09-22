@@ -20,6 +20,7 @@ class JamaiconSportsBallModule {
         System.out.println(soccer.performBounce());
         System.out.println(soccer.performDeflate());
         System.out.println(soccer.performInflate());
+        System.out.println(soccer.performFloat());
 
         System.out.println();
 
@@ -27,6 +28,7 @@ class JamaiconSportsBallModule {
         System.out.println(american.performBounce());
         System.out.println(american.performDeflate());
         System.out.println(american.performInflate());
+        System.out.println(american.performFloat());
 
         System.out.println();
 
@@ -34,6 +36,7 @@ class JamaiconSportsBallModule {
         System.out.println(base.performBounce());
         System.out.println(base.performDeflate());
         System.out.println(base.performInflate());
+        System.out.println(base.performFloat());
 
     }
 }

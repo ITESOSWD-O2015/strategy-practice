@@ -1,5 +1,9 @@
 package com.iteso.strategy2;
 
+import com.iteso.strategy.behaviors.iBounceBehavior;
+import com.iteso.strategy.behaviors.iDeflateBehavior;
+import com.iteso.strategy.behaviors.iFloatBehavior;
+
 /**
  * Created with IntelliJ IDEA.
  * User: rvillalobos
@@ -8,17 +12,39 @@ package com.iteso.strategy2;
  * To change this template use File | Settings | File Templates.
  */
 public abstract class Lifesaver {
-    protected String type;
-    public String inflating() {
-        return "I'm inflating";
+
+    private iFloatBehavior iFloatBehavior;
+    private iDeflateBehavior iDeflateBehavior;
+    private iBounceBehavior iBounceBehavior;
+
+    protected Lifesaver(){
+
     }
-    public String deflating() {
-        return "I'm deflating";
+
+
+   
+
+    public com.iteso.strategy.behaviors.iFloatBehavior getiFloatBehavior() {
+        return iFloatBehavior;
     }
-    public String floating() {
-        return "I'm floating";
+
+    public void setiFloatBehavior(com.iteso.strategy.behaviors.iFloatBehavior iFloatBehavior) {
+        this.iFloatBehavior = iFloatBehavior;
     }
-    public String display() {
-        return "I'm a " + type;
+
+    public com.iteso.strategy.behaviors.iDeflateBehavior getiDeflateBehavior() {
+        return iDeflateBehavior;
+    }
+
+    public void setiDeflateBehavior(com.iteso.strategy.behaviors.iDeflateBehavior iDeflateBehavior) {
+        this.iDeflateBehavior = iDeflateBehavior;
+    }
+
+    public com.iteso.strategy.behaviors.iBounceBehavior getiBounceBehavior() {
+        return iBounceBehavior;
+    }
+
+    public void setiBounceBehavior(com.iteso.strategy.behaviors.iBounceBehavior iBounceBehavior) {
+        this.iBounceBehavior = iBounceBehavior;
     }
 }
