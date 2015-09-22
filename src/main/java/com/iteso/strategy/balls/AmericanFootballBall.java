@@ -13,9 +13,9 @@ import com.iteso.strategy.behaviors.impl.IrregularBounce;
  */
 public class AmericanFootballBall extends Ball {
     public AmericanFootballBall() {
-        bounceBehavior =  new IrregularBounce();
-        iDeflateBehavior = new Deflatable();
-        type = "American Football ball";
+        setBounceBehavior(new IrregularBounce());
+        setiDeflateBehavior(new Deflatable());
+        setType("American Football ball");
     }
 
 }

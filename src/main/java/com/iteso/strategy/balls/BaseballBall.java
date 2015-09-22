@@ -13,8 +13,8 @@ import com.iteso.strategy.behaviors.impl.NotDeflatable;
  */
 public class BaseballBall extends Ball {
     public BaseballBall() {
-        bounceBehavior =  new IrregularBounce();
-        iDeflateBehavior = new NotDeflatable();
-        type = "Baseball ball";
+        setBounceBehavior(new IrregularBounce());
+        setiDeflateBehavior(new NotDeflatable());
+        setType("Baseball ball");
     }
 }

@@ -9,6 +9,5 @@ package com.iteso.strategy.behaviors;
  */
 public interface iDeflateBehavior {
     String deflate();
-
     String inflate();
 }

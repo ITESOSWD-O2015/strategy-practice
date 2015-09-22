@@ -13,8 +13,8 @@ import com.iteso.strategy.behaviors.impl.NormalBounce;
  */
 public class SoccerBall extends Ball {
     public SoccerBall() {
-        bounceBehavior =  new NormalBounce();
-        iDeflateBehavior = new Deflatable();
-        type = "Soccer ball";
+        setBounceBehavior(new NormalBounce());
+        setiDeflateBehavior(new Deflatable());
+        setType("Soccer ball");
     }
 }
