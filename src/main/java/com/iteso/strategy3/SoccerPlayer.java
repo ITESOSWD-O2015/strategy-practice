@@ -16,7 +16,7 @@ public abstract class SoccerPlayer {
     public SoccerPlayer(){
     }
 
-    public String player() {return getType() + " is player!";}
+    public String player() {return getType() + " is a player!";}
 
     public String performAttack() {return getAttack().offense();}
 

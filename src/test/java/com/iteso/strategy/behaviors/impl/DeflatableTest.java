@@ -11,6 +11,7 @@ import static org.junit.Assert.assertEquals;
  * To change this template use File | Settings | File Templates.
  */
 public class DeflatableTest {
+
     @Test
     public void testDeflatableDeflate() {
         Deflatable deflatable = new Deflatable();

@@ -13,7 +13,7 @@ public class Goalkeeper extends SoccerPlayer {
 
         setAttack(new LowAttack());
         setDefend(new HighDefense());
-        setType("Im a Goalkeeper like Casillas");
+        setType("Goalkeeper(Casillas)");
 
 
     }
