@@ -17,7 +17,7 @@ public class BasketballBall extends Ball {
         bounceBehavior =  new NormalBounce();
         iDeflateBehavior = new Deflatable();
         iFloatBehavior = new DoFloat();
-        type = " Basketball ball";
+        type = "Basketball ball";
     }
 
 }

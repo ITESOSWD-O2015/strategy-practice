@@ -17,7 +17,7 @@ public class TenisBall extends Ball {
         bounceBehavior =  new NormalBounce();
         iDeflateBehavior = new NotDeflatable();
         iFloatBehavior = new DoFloat();
-        type = "American Football ball";
+        type = "Tenis ball";
     }
 
 }

@@ -1,6 +1,7 @@
 package com.iteso.strategy2.lifesavers;
 
 import com.iteso.strategy.behaviors.impl.Deflatable;
+import com.iteso.strategy.behaviors.impl.NotDeflatable;
 import com.iteso.strategy2.Lifesaver;
 
 /**
@@ -12,7 +13,7 @@ import com.iteso.strategy2.Lifesaver;
  */
 public class SwimBelt extends Lifesaver {
     public SwimBelt() {
-        iDeflateBehavior = new Deflatable();
+        iDeflateBehavior = new NotDeflatable();
         type = "Swim Belts";
     }
 

@@ -16,10 +16,10 @@ public class BasketballBallTest {
     public void testBasketballBall() {
         BasketballBall basketballBall = new BasketballBall();
 
-        assertEquals("I'm bouncing irregularly!", basketballBall.performBounce());
+        assertEquals("I'm bouncing normally!", basketballBall.performBounce());
         assertEquals("I'm deflating!", basketballBall.performDeflate());
         assertEquals("I'm inflating!", basketballBall.performInflate());
         assertEquals("I'm floating!", basketballBall.performFloat());
-        assertEquals("Basketball is rolling!", basketballBall.roll());
+        assertEquals("Basketball ball is rolling!", basketballBall.roll());
     }
 }

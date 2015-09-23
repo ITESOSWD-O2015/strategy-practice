@@ -20,6 +20,6 @@ public class BowlingBallTest {
         assertEquals("I can't deflate!", bowlingBall.performDeflate());
         assertEquals("I can't inflate!", bowlingBall.performInflate());
         assertEquals("I can't float!", bowlingBall.performFloat());
-        assertEquals("Bowling Ball is rolling!", bowlingBall.roll());
+        assertEquals("Bowling ball is rolling!", bowlingBall.roll());
     }
 }

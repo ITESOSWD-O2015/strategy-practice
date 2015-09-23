@@ -1,5 +1,7 @@
+import com.iteso.strategy2.lifesavers.ArmBands;
 import com.iteso.strategy2.Lifesaver;
-import com.iteso.strategy2.lifesavers.*;
+import com.iteso.strategy2.lifesavers.SwimRing;
+import com.iteso.strategy2.lifesavers.SwimSeat;
 
 
 /**
