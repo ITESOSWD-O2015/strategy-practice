@@ -8,7 +8,9 @@ package com.iteso.strategy2;
  * To change this template use File | Settings | File Templates.
  */
 public abstract class Lifesaver {
+
     protected String type;
+    public com.iteso.strategy.behaviors.iDeflateBehavior iDeflateBehavior;
     public String inflating() {
         return "I'm inflating";
     }

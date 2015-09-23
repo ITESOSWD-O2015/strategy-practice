@@ -1,6 +1,7 @@
 package com.iteso.strategy2.lifesavers;
 
 import com.iteso.strategy2.Lifesaver;
+import com.iteso.strategy.behaviors.impl.Deflatable;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,6 +12,8 @@ import com.iteso.strategy2.Lifesaver;
  */
 public class SwimRing extends Lifesaver {
     public SwimRing() {
+        iDeflateBehavior = new Deflatable();
+
         type = "Swim ring";
     }
 }

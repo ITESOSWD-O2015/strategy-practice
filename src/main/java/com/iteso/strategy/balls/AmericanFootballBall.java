@@ -3,7 +3,7 @@ package com.iteso.strategy.balls;
 import com.iteso.strategy.Ball;
 import com.iteso.strategy.behaviors.impl.Deflatable;
 import com.iteso.strategy.behaviors.impl.IrregularBounce;
-
+import com.iteso.strategy.behaviors.impl.DoFloat;
 /**
  * Created with IntelliJ IDEA.
  * User: rvillalobos
@@ -13,9 +13,9 @@ import com.iteso.strategy.behaviors.impl.IrregularBounce;
  */
 public class AmericanFootballBall extends Ball {
     public AmericanFootballBall() {
-        bounceBehavior =  new IrregularBounce();
-        iDeflateBehavior = new Deflatable();
+        setBounceBehavior(new IrregularBounce());
+        setiDeflateBehavior(new Deflatable());
+        setFloatBehavior(new DoFloat());
         type = "American Football ball";
     }
-
 }

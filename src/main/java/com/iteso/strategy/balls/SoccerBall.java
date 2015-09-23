@@ -1,9 +1,8 @@
 package com.iteso.strategy.balls;
-
 import com.iteso.strategy.Ball;
 import com.iteso.strategy.behaviors.impl.Deflatable;
 import com.iteso.strategy.behaviors.impl.NormalBounce;
-
+import com.iteso.strategy.behaviors.impl.DoFloat;
 /**
  * Created with IntelliJ IDEA.
  * User: rvillalobos
@@ -13,8 +12,9 @@ import com.iteso.strategy.behaviors.impl.NormalBounce;
  */
 public class SoccerBall extends Ball {
     public SoccerBall() {
-        bounceBehavior =  new NormalBounce();
-        iDeflateBehavior = new Deflatable();
+        setBounceBehavior(new NormalBounce());
+        setiDeflateBehavior(new Deflatable());
+        setFloatBehavior(new DoFloat());
         type = "Soccer ball";
     }
 }
