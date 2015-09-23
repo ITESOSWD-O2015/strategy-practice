@@ -1,5 +1,6 @@
 package com.iteso.strategy.behaviors.impl;
 
+
 import com.iteso.strategy.behaviors.iFloatBehavior;
 
 /**

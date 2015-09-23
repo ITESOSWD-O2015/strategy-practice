@@ -27,7 +27,6 @@ public abstract class Ball {
     public String performBounce() {
         return getBounceBehavior().bounce();
     }
-
     public String performDeflate() {
         return getiDeflateBehavior().deflate();
     }
