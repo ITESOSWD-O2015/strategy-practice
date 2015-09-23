@@ -1,5 +1,7 @@
 package com.iteso.strategy2.lifesavers;
 
+import com.iteso.strategy.behaviors.impl.DoFloat;
+import com.iteso.strategy.behaviors.impl.NotDeflatable;
 import com.iteso.strategy2.Lifesaver;
 
 /**
@@ -7,6 +9,8 @@ import com.iteso.strategy2.Lifesaver;
  */
 public class LifesaversCandies extends Lifesaver{
     public LifesaversCandies() {
+        setiFloatBehavior(new DoFloat());
+        setiDeflateBehavior(new NotDeflatable());
         setType("Life Savers Candies");
     }
 
