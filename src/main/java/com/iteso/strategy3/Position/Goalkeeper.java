@@ -16,6 +16,5 @@ public class Goalkeeper extends SoccerPlayer {
         setType("Im a Goalkeeper like Casillas");
 
 
-
     }
 }

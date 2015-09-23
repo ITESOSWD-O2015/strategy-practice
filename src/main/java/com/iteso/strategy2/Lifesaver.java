@@ -15,8 +15,8 @@ public abstract class Lifesaver extends Ball{
     private iDeflateBehavior iDeflateBehavior;
 
     public Lifesaver(){
-
     }
+
 
     public String performDeflate() {return getiDeflateBehavior().deflate();}
     public String floating() {return "I'm floating";}
