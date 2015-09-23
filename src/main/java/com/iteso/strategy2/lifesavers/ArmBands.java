@@ -1,5 +1,7 @@
 package com.iteso.strategy2.lifesavers;
 
+import com.iteso.strategy.behaviors.impl.Deflatable;
+import com.iteso.strategy.behaviors.impl.NotDeflatable;
 import com.iteso.strategy2.Lifesaver;
 
 /**
@@ -11,7 +13,15 @@ import com.iteso.strategy2.Lifesaver;
  */
 public class ArmBands extends Lifesaver {
     public ArmBands() {
-        type = "Arm bands";
+        setType("Arm bands");
+        setiDeflateBehavior(new Deflatable()); //change
+        setiDeflateBehavior(new NotDeflatable());//change
+
     }
 
+
 }
+//agregar al testisng los que estan en fb (clases)
+/*
+crear los testing para cada caso de los deflaviors
+ */

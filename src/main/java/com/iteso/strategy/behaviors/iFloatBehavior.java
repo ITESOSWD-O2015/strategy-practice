@@ -1,4 +1,4 @@
-package com.iteso.strategy.behaviors.impl;
+package com.iteso.strategy.behaviors;
 
 /**
  * Created by Feelpaa on 22/09/2015.

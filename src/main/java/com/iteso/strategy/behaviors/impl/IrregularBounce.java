@@ -11,7 +11,5 @@ import com.iteso.strategy.behaviors.iBounceBehavior;
  */
 public class IrregularBounce implements iBounceBehavior {
 
-    public String bounce() {
-        return "I'm bouncing irregularly!";
-    }
+    public String bounce() {return "I'm bouncing irregularly!"; }
 }
