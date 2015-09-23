@@ -1,5 +1,8 @@
 package com.iteso.strategy2.lifesavers;
 
+import com.iteso.strategy.behaviors.impl.Deflatable;
+import com.iteso.strategy.behaviors.impl.DoFloat;
+import com.iteso.strategy.behaviors.impl.Superflatable;
 import com.iteso.strategy2.Lifesaver;
 
 /**
@@ -11,6 +14,7 @@ import com.iteso.strategy2.Lifesaver;
  */
 public class SwimRing extends Lifesaver {
     public SwimRing() {
-        type = "Swim ring";
+
+        setType("Swim Ring");
     }
 }

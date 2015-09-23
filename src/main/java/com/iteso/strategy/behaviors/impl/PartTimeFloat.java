@@ -7,5 +7,5 @@ import com.iteso.strategy.behaviors.iFloatBehavior;
  */
 public class PartTimeFloat implements iFloatBehavior {
 
-    public String Float(){ return "I'm oart time floating. :P";}
+    public String Float(){ return "I'm part time floating. :P";}
 }

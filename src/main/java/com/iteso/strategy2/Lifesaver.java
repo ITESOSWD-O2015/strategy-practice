@@ -13,24 +13,49 @@ import com.iteso.strategy.behaviors.iFloatBehavior;
  */
 public abstract class Lifesaver {
 
-    private iFloatBehavior iFloatBehavior;
     private iDeflateBehavior iDeflateBehavior;
+    private iFloatBehavior iFloatBehavior;
     private iBounceBehavior iBounceBehavior;
+    private String type;
 
-    protected Lifesaver(){
-
+    public String floating() {
+        return "I'm floating";
+    }
+    public String display() {
+        return "I'm a " + getType();
     }
 
 
-   
-
-    public com.iteso.strategy.behaviors.iFloatBehavior getiFloatBehavior() {
-        return iFloatBehavior;
+    public String performDeflate() {
+        return getiDeflateBehavior().deflate();
     }
 
-    public void setiFloatBehavior(com.iteso.strategy.behaviors.iFloatBehavior iFloatBehavior) {
-        this.iFloatBehavior = iFloatBehavior;
+    public String performInflate() {
+        return getiDeflateBehavior().inflate();
     }
+
+    public iBounceBehavior getiBounceBehavior() {
+        return iBounceBehavior;
+    }
+
+    public void setiBounceBehavior(iBounceBehavior iBounceBehavior) {
+        this.iBounceBehavior = iBounceBehavior;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public com.iteso.strategy.behaviors.iFloatBehavior getiFloatBehavior() {return iFloatBehavior;
+    }
+
+    public void setiFloatBehavior(com.iteso.strategy.behaviors.iFloatBehavior iFloatBehavior) {this.iFloatBehavior = iFloatBehavior;
+    }
+
 
     public com.iteso.strategy.behaviors.iDeflateBehavior getiDeflateBehavior() {
         return iDeflateBehavior;
@@ -38,13 +63,5 @@ public abstract class Lifesaver {
 
     public void setiDeflateBehavior(com.iteso.strategy.behaviors.iDeflateBehavior iDeflateBehavior) {
         this.iDeflateBehavior = iDeflateBehavior;
-    }
-
-    public com.iteso.strategy.behaviors.iBounceBehavior getiBounceBehavior() {
-        return iBounceBehavior;
-    }
-
-    public void setiBounceBehavior(com.iteso.strategy.behaviors.iBounceBehavior iBounceBehavior) {
-        this.iBounceBehavior = iBounceBehavior;
     }
 }
